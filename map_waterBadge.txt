@@ -4,5 +4,5 @@
 ||PoliwhirlRoom|SquirtleRoom|HeathRoom||
 ||HeathRoom||BulbasaurRoom||
 ||BulbasaurRoom|CharmanderRoom|FindPokeBallRoom||
-||FindPokeBallRoom||
-||StartingRoom||
+||HeathRoom||
+||StartingRoom1||

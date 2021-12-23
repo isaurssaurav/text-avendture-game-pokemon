@@ -119,7 +119,8 @@ class Player():
         enemy.hp -=  self.currentPokemon.damage
 
         print('{} HP: {}'.format(enemy.name, enemy.hp))
-
+        if self.currentPokemon.hp <= 0:
+            print(self.currentPokemon.name+ ' is defeated. Please pick new pokemon.')
         if not enemy.is_alive():
             print("You have defeated {}!".format(enemy.name))
 

@@ -10,7 +10,7 @@ class Pokemon:
 
 class Pikachu(Pokemon):
     def __init__(self):
-        super().__init__(name="Pikachu", hp=10, damage=2,type='Lighting')
+        super().__init__(name="Pikachu", hp=10, damage=2,type='Thunder')
 
 class Bulbasaur(Pokemon):
     def __init__(self):
@@ -39,3 +39,7 @@ class Turtwig(Pokemon):
 class Gyarados(Pokemon):
     def __init__(self):
         super().__init__(name="Gyarados",hp=25,damage=3,type = 'water')
+
+class Rattata(Pokemon):
+    def __init__(self):
+        super().__init__(name="Rattata",hp=25,damage=3,type = 'Thunder')

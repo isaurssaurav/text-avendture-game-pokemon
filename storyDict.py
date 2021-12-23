@@ -32,12 +32,19 @@ story_two = {
 
 story_three = {
     "intro_message" : """
+       Prof. Oak: I see you leveling up quick. Go get hurry get your first badge.
+       Ash: Okay, Prof.
     """,
     "actions": [actions.ViewPokemons(),actions.selectPokemon(),actions.ViewInventory() ]
 }
 #
 story_four= {
-    "intro_message" : """
+    "intro_message" :  """
+    ---- Pro. Oak Lab ---
+
+       Prof. Oak: Why Are you here? Go get hurry get your first badge.
+                    And remember to take care of your pokemon
+       Ash: Okay, Prof.
     """,
     "actions": [actions.ViewPokemons(),actions.selectPokemon(),actions.ViewInventory() ]
 }

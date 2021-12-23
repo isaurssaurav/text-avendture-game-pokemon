@@ -39,7 +39,7 @@ class MapTile:
 
         return moves
 
-class StartingRoom(MapTile):
+class StartingRoom1(MapTile):
     # override the intro_text method in the superclass
 
 
@@ -261,6 +261,25 @@ class PonytaRoom(EnemyRoom):
         return """
             A defeated Gymleader, lucas is very unhappy but like the way you fought. He gives his pokemon Ponyta. You can catch it.
         """
+
+class RattataRoom(EnemyRoom):
+    def __init__(self,x,y):
+         super().__init__(x,y, pokemons.Rattata())
+    def intro_text(self):
+        if self.is_enemy_captured == True:
+            return "You have defeted the Gym Leader. You have earned Thunder badge."
+        if self.enemy.is_alive() or self.is_completed == False:
+            return """
+            Harold: I am the Gym Leader with Thunder badge. It amazing that you are here now.
+            Harold: Hmm...
+            Harold: You little..., Rattata I choose you.
+            Harold: Rattata, Basic attack.
+            """
+        return """
+            A defeated Gymleader, lucas is very unhappy but like the way you fought. He gives his pokemon Rattata. You can catch it.
+        """
+
+
 class FindPokeBallRoom(LootRoom):
     def __init__(self,x,y):
         super().__init__(x, y, items.PokeBall(10))
@@ -289,6 +308,24 @@ class StartingRoom2(MapTile):
         global player_level
         return """
             You have arrived in new world. Here you can find new pokemon. And Try to get fire badge from this level
+
+        """
+
+    def modify_player(self, player):
+        #Room has no action on player
+        pass
+
+    def available_actions(self,the_player):
+        current_player_level = select_current_level_story(globalVariable.player_level)
+        return self.adjacent_moves() + player_level_map_story[current_player_level]["actions"]
+
+
+class StartingRoom3(MapTile):
+    # override the intro_text method in the superclass
+    def intro_text(self):
+        global player_level
+        return """
+            You have arrived in new world - Thunder workd. Here you can find new pokemon. And Try to get thunder badge from this level
 
         """
 

@@ -2,8 +2,8 @@ import world
 from player import Player
 import os
 
-def play(map):
-    world.load_tiles(map)
+def play(map,starting_room_index=1):
+    world.load_tiles(map,starting_room_index)
     player = Player()
     # Always start from starting position
     x, y = world.starting_position
@@ -27,7 +27,10 @@ def play(map):
                     break
     if player.victory:
         action_input = input('Action: Do you want to play next level/map? (Y/N):')
-        play('map_fireBadge.txt')
+        if map == "map_waterBadge.txt": #level 2
+            play('map_fireBadge.txt',2)
+        if map == "map_fireBadge.txt": #level 2
+            play('map_thunder_badge.txt',3)
 
 if __name__ == "__main__":
     play('map_waterBadge.txt')
