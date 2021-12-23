@@ -13,7 +13,7 @@ $ . venv/bin/activate
 
 $ pip install -r requirements.txt 
 
-$ python3 main.py
+$ python3 game.py
 ```
 
 ## Game Feature
