@@ -26,7 +26,7 @@ class Charmander(Pokemon):
 
 class Poliwhirl(Pokemon):
     def __init__(self):
-        super().__init__(name="Poliwhirl", hp=20, damage=4,type='water')
+        super().__init__(name="Poliwhirl", hp=20, damage=2,type='water')
 
 class Squirtle(Pokemon):
     def __init__(self):

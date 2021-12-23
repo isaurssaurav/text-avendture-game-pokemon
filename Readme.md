@@ -3,9 +3,9 @@
 ## Setup and Usage
 
 ```
-$ git clone 
+$ git clone https://github.com/isaurssaurav/text-avendture-game-pokemon.git
 
-$ cd pokemon/
+$ cd text-avendture-game-pokemon/
 
 $ python3 -m venv venv
 
@@ -15,3 +15,10 @@ $ pip install -r requirements.txt
 
 $ python3 main.py
 ```
+
+## Game Feature
+1. Player Level, Player can go through tutorial
+2. Two Maps, Player can collect two badges : Water and Fire
+3. Catch Pokemon, Select Pokemon, View Pokemon, Regain Pokemons health
+4. More than 10 Pokemons
+5. Sound Effects
