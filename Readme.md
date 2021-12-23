@@ -18,7 +18,7 @@ $ python3 game.py
 
 ## Game Feature
 1. Player Level, Player can go through tutorial
-2. Two Maps, Player can collect two badges : Water and Fire
-3. Catch Pokemon, Select Pokemon, View Pokemon, Regain Pokemons health
-4. More than 10 Pokemons
+2. Player can fight and catch pokemons
+3. Three Maps, Player can collect two badges : Water, Fire and Thunder
+4. Catch Pokemon, Select Pokemon, View Pokemon, Regain Pokemons health
 5. Sound Effects
