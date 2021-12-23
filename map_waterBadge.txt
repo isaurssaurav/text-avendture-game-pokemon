@@ -1,0 +1,8 @@
+|||VictoryRoom|
+||GyaradosRoom|EmptyCavePath||
+||HeathRoom||
+||PoliwhirlRoom|SquirtleRoom|HeathRoom||
+||HeathRoom||BulbasaurRoom||
+||BulbasaurRoom|CharmanderRoom|FindPokeBallRoom||
+||FindPokeBallRoom||
+||StartingRoom||
